@@ -44,7 +44,10 @@ pipeline {
 
         stage('Deploy Container') {
             steps {
-                sh 'docker run -d -p 80:80 --name react-app $IMAGE_NAME'
+                sh '''
+            docker rm -f react-app || true
+            docker run -d -p 80:80 --name react-app $IMAGE_NAME
+        '''
             }
         }
     }
