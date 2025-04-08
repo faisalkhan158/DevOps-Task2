@@ -5,12 +5,12 @@ pipeline {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub') // Replace with your actual Jenkins credential ID
         IMAGE_NAME = 'faisalkhan158/portfolio'
     }
-
+    
     stages {
         stage('Git Checkout') {
             steps {
-                git 'https://github.com/faisalkhan158/DevOps-Task2.git'
-            }
+        git branch: 'main', url: 'https://github.com/faisalkhan158/DevOps-Task2.git'
+           }
         }
 
         stage('Install Dependencies') {
