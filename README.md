@@ -64,4 +64,7 @@ The Jenkins pipeline successfully builds, pushes, and deploys the React applicat
   sudo systemctl restart jenkins
 
 ## 🔧 Additional Tip
+- To auto-trigger builds on GitHub commits:
+  - Enable **“GitHub hook trigger for GITScm polling”** in Jenkins
+  - Add a webhook in GitHub pointing to your Jenkins URL: `/github-webhook/`
 - Use Node.js version 18+ to avoid compatibility issues when building React apps.
