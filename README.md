@@ -21,6 +21,7 @@ Automate the CI/CD pipeline for a React portfolio application using Jenkins and 
 3. Build Docker image using a multi-stage Dockerfile
 4. Push Docker image to DockerHub
 5. Deploy the container on EC2 via Jenkins pipeline
+6. Triggers automatically on **push to main branch** (via GitHub webhook)
 
 ---
 
