@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub') // Replace with your actual Jenkins credential ID
-        IMAGE_NAME = 'faisalkhan158/portfolio'
+        IMAGE_NAME = 'faisalkhan15/portfolio'
     }
     
     stages {
